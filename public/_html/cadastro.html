@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    <link rel="stylesheet" href="/public/_css/cadastro.css">
+</head>
+<header>
+    <nav>
+        <a href="/public/index.html">LOGIN</a>
+    </nav>
+</header>
+<body>
+    <div id="primaria">
+        <div id="secundaria">
+            <div id="tercearia">
+                <select name="musica" id="musica">
+                    <option value="Rock">Rock</option>
+                    <option value="Metal">Metal</option>
+                </select>
+                <br><br>
+                <input type="text" id="nome" placeholder="Insira seu nome">
+                <br><br>
+                <input type="text" id="sobrenome" placeholder="Insira seu sobrenome">
+                <br><br>
+                <input type="number" id="cpf" placeholder="Insira seu cpf">
+                <br><br>
+                <input type="email" id="email" placeholder="Insira seu Email">
+                <br><br>
+                <input type="password" id="senha" placeholder="Insira sua senha">
+                <br><br>
+                <input type="number" id="cep" placeholder="Insira seu CEP" onblur="pesquisaCep()">
+                <br><br>
+                <input type="text" id="estado" readonly>
+                <br><br>
+                <input type="text" id="cidade" readonly>
+                <br><br>
+                <input type="text" id="bairro" readonly>
+                <br><br>
+                <input type="text" id="rua" readonly>
+                <br><br>
+                <input type="text" id="telefone" placeholder="Insira seu telefone">
+                <br><br>
+                <button onclick="enviarDados()" class="buttonPost">Cadastrar</button>
+            </div>
+        </div>
+    </div>
+    <script src="/public/_js/cadastro.js"></script>
+</body>
+</html>

@@ -1,0 +1,140 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: url('/public/img/backgroundIMG.jpg') no-repeat center center fixed;
+    background-size: cover;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* HEADER */
+header {
+    height: 60px;
+    background-color: rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(12px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav {
+    display: flex;
+    gap: 80px;
+}
+
+nav a {
+    color: #fff;
+    font-size: 20px;
+    text-decoration: none;
+    transition: 0.3s;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #ff0055;
+    text-shadow: 0 0 12px #ff0055;
+    transform: scale(1.15);
+}
+
+/* TITULOS */
+h1 {
+    color: white;
+    text-align: center;
+    margin: 40px 0;
+    font-size: 36px;
+    text-shadow: 0 0 12px black;
+}
+
+/* FORMULÁRIOS (POST, DELETE, PUT) */
+.formPost, .delete, .put {
+    background-color: rgba(0, 0, 0, 0.55);
+    backdrop-filter: blur(25px);
+    padding: 25px;
+    border-radius: 12px;
+    margin: 50px auto;
+    color: white;
+    box-shadow: 0 0 20px rgba(255, 0, 82, 0.4);
+}
+
+.formPost {
+    width: 500px;
+}
+
+.delete {
+    width: 350px;
+}
+
+.put {
+    width: 450px;
+}
+
+label {
+    font-size: 15px;
+    margin-bottom: 4px;
+    display: inline-block;
+}
+
+/* INPUTS */
+input {
+    width: 100%;
+    padding: 6px;
+    margin-bottom: 14px;
+    background: transparent;
+    border: none;
+    border-bottom: 2px solid #fff;
+    outline: none;
+    color: white;
+    font-size: 15px;
+    text-shadow: 0 0 8px rgba(255,255,255,0.8);
+    transition: border 0.3s;
+}
+
+input:focus {
+    border-bottom-color: #ff0055;
+    text-shadow: 0 0 12px #ff0055;
+}
+
+/* BOTÕES */
+button, .buttonPost, .buttonAtualizar, .buttonBuscar, .buttonDelete {
+    margin-top: 10px;
+    padding: 10px 18px;
+    background-color: #ff0055;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    color: white;
+    transition: 0.3s;
+}
+
+button:hover, .buttonPost:hover, .buttonAtualizar:hover, .buttonBuscar:hover, .buttonDelete:hover {
+    background-color: #ff247b;
+    transform: scale(1.05);
+    box-shadow: 0 0 10px #ff247b;
+}
+
+/* TABELA */
+table {
+    margin: 20px auto;
+    width: 90%;
+    border-collapse: collapse;
+    background-color: rgba(0,0,0,0.45);
+    backdrop-filter: blur(12px);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+td {
+    border: 1px solid rgba(255,255,255,0.4);
+    padding: 6px;
+    color: #fff;
+}
+
+td:first-child {
+    font-weight: bold;
+    color: #ff0055;
+}

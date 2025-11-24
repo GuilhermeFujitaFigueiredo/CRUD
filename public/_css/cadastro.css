@@ -1,0 +1,120 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: url(/public/img/green-day.jpg) center/cover no-repeat;
+    font-family: "Arial", sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.35);
+    backdrop-filter: blur(8px);
+    text-align: center;
+}
+
+nav a {
+    font-size: 20px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    opacity: 0.7;
+    transform: scale(1.05);
+}
+
+#primaria {
+    margin-top: 50px;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#secundaria {
+    width: 400px;
+    padding: 25px;
+    border-radius: 15px;
+    background: rgba(0,0,0,0.45);
+    backdrop-filter: blur(8px);
+    color: white;
+    animation: fadeIn 0.4s ease-in-out;
+}
+
+#tercearia {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+label {
+    font-size: 14px;
+}
+
+input, select {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-bottom: 2px solid white;
+    background: transparent;
+    color: white;
+    font-size: 15px;
+    outline: none;
+    transition: 0.3s;
+}
+
+select option {
+    color: black;
+    background: white;
+    font-size: 15px;
+}
+
+input::placeholder {
+    color: #ddd;
+}
+
+input:focus, select:focus {
+    border-bottom: 2px solid rgb(255, 0, 82);
+}
+
+button {
+    margin-top: 10px;
+    background: linear-gradient(90deg, #7a0026, #d10063);
+    border: none;
+    outline: none;
+    cursor: pointer;
+    border-radius: 5px;
+    height: 40px;
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+    transition: 0.25s;
+}
+
+button:hover {
+    transform: scale(1.1);
+    filter: brightness(1.2);
+}
+
+/* Responsividade */
+@media (max-width: 500px) {
+    #secundaria {
+        width: 90%;
+        padding: 20px;
+    }
+}
+
+/* Animação suave */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(30px); }
+    to { opacity: 1; transform: translateY(0); }
+}

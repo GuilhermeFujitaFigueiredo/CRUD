@@ -1,0 +1,103 @@
+body {
+    background: url(/public/img/backgroundIMG.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    font-family: 'Oswald', sans-serif; /* Fonte mais rock */
+    color: #fff;
+}
+
+#primaria {
+    margin-top: 250px;
+    display: flex;
+    justify-content: center;
+}
+
+#secundaria {
+    background: rgba(0, 0, 0, 0.45);
+    backdrop-filter: blur(6px);
+    height: 380px;
+    width: 330px;
+    border-radius: 12px;
+    box-shadow: 0 0 20px rgba(255, 0, 82, 0.3);
+    transition: 0.4s;
+}
+
+#secundaria:hover {
+    box-shadow: 0 0 30px rgba(255, 0, 82, 0.6);
+}
+
+#tercearia {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.icon {
+    margin-top: 20px;
+    height: 100px;
+    width: 100px;
+    border-radius: 100px;
+    border: 2px solid rgba(255, 0, 82, 0.6);
+}
+
+/* INPUTS */
+input {
+    width: 80%;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid #ffffff;
+    padding: 6px;
+    margin-bottom: 15px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #ffffff;
+    text-shadow: 0 0 5px rgba(255, 255, 255, 0.6);
+    transition: 0.3s;
+}
+
+input:focus {
+    border-bottom: 2px solid rgb(255, 0, 82);
+    text-shadow: 0 0 10px rgba(255, 0, 82, 0.9);
+}
+
+input::placeholder {
+    color: #d4d4d4;
+}
+
+/* BOTÃO ESTILIZADO */
+button {
+    margin-top: 10px;
+    background: linear-gradient(90deg, #7a0026, #d10063);
+    border: none;
+    outline: none;
+    cursor: pointer;
+    border-radius: 5px;
+    height: 35px;
+    width: 120px;
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+    transition: 0.25s;
+}
+
+button:hover {
+    transform: scale(1.1);
+    filter: brightness(1.2);
+}
+
+/* TEXTO */
+p, a {
+    color: rgb(255, 255, 255);
+    font-size: 14px;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    color: rgb(255, 0, 82);
+    text-shadow: 0 0 8px rgb(255, 0, 82);
+}
